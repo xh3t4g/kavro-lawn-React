@@ -95,7 +95,7 @@ header span {
 
 #gallery_list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 12px;
     padding: 10px;
 }
@@ -110,11 +110,18 @@ header span {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.622);
 }
 
+@media (max-width: 1200px) {
+    #gallery_list {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 12px;
+    }
+}
+
 
 /* Планшет */
 @media (max-width: 768px) {
     #gallery_list {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
         gap: 12px;
     }
 }
