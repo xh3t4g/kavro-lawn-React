@@ -186,8 +186,9 @@ header span {
     padding: 12px 12px;
     justify-content: space-between;
     font-size: 15px;
+    color: #2a2a2a;
     font-weight: 600;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Manrope', sans-serif;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.322);
 }
 
@@ -293,8 +294,10 @@ header span {
     .card_container_text_trova, .card_container_text_bild {
         flex-direction: column;
         text-align: center;
-        line-height: 2;
+        line-height: 1.5;
+        font-size: 18px;
     }
+
     .card_trova, .card_bild {
         width: 300px;
     }
