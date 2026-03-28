@@ -52,12 +52,12 @@ export function HomePage ({setCurrentPage}) {
                     </div>
                     
                         <div className="card_container_text_bild">
-                          <span>Вывоз хлама</span>  
+                          <span>Вырубка деревьев</span>  
                           <span>Демонтаж</span>
                         </div>
                         
                         <div className="card_container_text_bild">
-                          <span>Сборка и ремонт</span>  
+                          <span>Вывоз хлама</span>  
                           <span>Уборка после работ</span>
                         </div>
 
@@ -72,6 +72,8 @@ export function HomePage ({setCurrentPage}) {
                 <a href="https://t.me/cnskfho" className="Telegram" target="_blank" rel="noopener">Написать в Telegram</a>
 
                 <a href="https://wa.me/79931849236" className="WhatsApp" target="_blank" rel="noopener">Написать в WhatsApp</a>
+
+                <a href="tel:+79931849236" className="Phone" target="_blank" rel="noopener">Позвонить</a>
             </div>
         </section>
     </main>
