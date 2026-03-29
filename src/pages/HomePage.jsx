@@ -30,41 +30,30 @@ export function HomePage ({setCurrentPage}) {
                     <div className="card_container_title_trova">
                     <h3>🌱 Покос травы</h3></div>
 
-                    <div className="card_container_text_trova">
-                        <span>Косим траву</span>
-                        <span>Убираем траву</span>
-                    </div>
-
-                    <div className="card_container_text_trova">
-                        <span>Вывозим мусор</span>
-                        <span>Чистим участок</span>
-                    </div>
-
-                    <div className="card_container_text_trova">
-                        <span>Подравниваение</span>
-                        <span>Удаление сорняков</span>
-                    </div>
+                    <ul className='card_services_list trova_list'>
+                        <li>Косим траву</li>
+                        <li>Убираем траву</li>
+                        <li>Вывозим мусор</li>
+                        <li>Чистим участок</li>
+                        <li>Подравниваение</li>
+                        <li>Удаление сорняков</li>
+                        
+                    </ul>
                 </div>
 
                 <div className="card_bild">
                     <div className="card_container_title_bild">
                         <h3>🛠 Разнорабочие</h3>
                     </div>
-                    
-                        <div className="card_container_text_bild">
-                          <span>Вырубка деревьев</span>  
-                          <span>Демонтаж</span>
-                        </div>
-                        
-                        <div className="card_container_text_bild">
-                          <span>Вывоз хлама</span>  
-                          <span>Уборка после работ</span>
-                        </div>
 
-                        <div className="card_container_text_bild">
-                          <span>Перенос и погрузка</span>  
-                          <span>Мелкий ремонт</span>
-                        </div>
+                    <ul className="card_services_list bild_list">
+                        <li>Вырубка деревьев</li>
+                        <li>Демонтаж</li>
+                        <li>Вывоз хлама</li>
+                        <li>Уборка после работ</li>
+                        <li>Перенос и погрузка</li>
+                        <li>Мелкий ремонт</li>
+                    </ul>
                 </div>
             </div>
 

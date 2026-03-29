@@ -181,23 +181,72 @@ header span {
 
 
 
-.card_container_text_trova, .card_container_text_bild {
+.card_services_list {
+    list-style: none;
+    padding: 10px 0 4px 0;
+    margin: 8px 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+ 
+.card_services_list li {
     display: flex;
-    padding: 12px 12px;
-    justify-content: space-between;
-    font-size: 15px;
-    color: #2a2a2a;
-    font-weight: 600;
+    align-items: center;
+    gap: 9px;
+    padding: 9px 12px;
     font-family: 'Manrope', sans-serif;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.322);
-}
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e2a1a;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.121);
+    backdrop-filter: blur(3px);
+    transition: background 0.2s, transform 0.15s;
 
-.card_container_text_trova {
-    border-left: 2px solid rgba(0, 128, 0, 0.266);
 }
-
-.card_container_text_bild {
-    border-left: 2px solid rgba(110, 75, 9, 0.258);
+ 
+.card_services_list li:hover {
+    background: rgba(255, 255, 255, 0.62);
+    transform: translateY(-1px);
+}
+ 
+/* checkmark badge – green for trova */
+.trova_list li::before {
+    content: '✓';
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #2a8c2a, #6ab634);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 800;
+    box-shadow: 0 2px 6px rgba(42, 140, 42, 0.35);
+}
+ 
+/* checkmark badge – amber for bild */
+.bild_list li {
+    color: #2a1e08;
+}
+ 
+.bild_list li::before {
+    content: '✓';
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #8b5a00, #d4820a);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 800;
+    box-shadow: 0 2px 6px rgba(139, 90, 0, 0.35);
 }
 
 
@@ -290,14 +339,6 @@ header span {
         gap: 8px;
         text-align: center;
     }
-
-    .card_container_text_trova, .card_container_text_bild {
-        flex-direction: column;
-        text-align: center;
-        line-height: 1.5;
-        font-size: 18px;
-    }
-
     .card_trova, .card_bild {
         width: 300px;
     }
@@ -306,6 +347,13 @@ header span {
     }
     .Phone , .WhatsApp, .Telegram  {
         font-size: 16px;
+    }
+    .card_services_list {
+        grid-template-columns: 1fr;
+    }
+ 
+    .card_services_list li {
+        font-size: 15px;
     }
 }
 
